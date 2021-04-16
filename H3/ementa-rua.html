@@ -10,14 +10,13 @@
     <!-- Typefaces -->
     <link rel="stylesheet" href="https://use.typekit.net/qsq2pat.css">
     <!-- Styles -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css" charset="utf-8">
     <link href="css/ementa-rua.css" rel="stylesheet" type="text/css" charset="utf-8">
     <!-- Random background script -->
     <script type="text/javascript"> 
-        var totalCount = 1;
+        var totalCount = 6;
         function backgroundChange() {
             var num = Math.ceil( Math.random() * totalCount );
-            document.body.background = 'img-restaurante/background-'+num+'.jpg';
+            document.body.background = 'img/backgrounds/background-'+num+'.jpg';
         }
     </script>
     <!-- Analytics -->
@@ -38,22 +37,151 @@
         backgroundChange();
     </script>
     <div class="ementa">
-        <div class="titulo"><h1>Para comer<br>no VIRA</h1></div>
-        <div class="ementa-grupo">
-            <div class="sub-titulo-wrapper">
-                <div class="sub-titulo">Menu VIRA Frango</div>
-                <div class="artigo-nota">Inclui um acompanhamento<br>e uma bebida da casa</div>
+        <div class="ementa-header">
+            <div class="logo">
+                <img src="img/logo-h3.svg">
+            </div>
+            <a class="language" href="#">EN</a>
+        </div>
+        <fieldset>
+            <legend><img src="img/mustard.svg"><h1>Entrada</h1></legend>
+            <div class="artigo-wrapper">
+                <div class="artigo">
+                    <p class="artigo-nome">Croquete</p>
+                    <div class="artigo-espaco"></div>
+                    <p class="artigo-preco">€ 1.10</p>
+                </div>
+                <div class="artigo-nota">Um croquete com mostarda.</div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><img src="img/burger.svg"><h1>Hambúrgueres</h1></legend>
+            <div class="menu-info">
+                <p><span style="font-weight: 700;">Hambúrguer de 200 g <u>no pão ou no prato</u>.</span></p>
+                <p><span style="font-weight: 700;">Acompanhamentos à escolha: batatas às rodelas ou arroz Thai.</span></p>
+                <p>— no prato inclui 2 acompanhamentos;</p>
+                <p>— no pão inclui 1 acompanhamento.</p>
+            </div>
+            <p class="bebida-legenda"><span style="color: var(--black);">sem</span> / com bebida</p>
+            <div class="artigo-wrapper">
+                <div class="artigo">
+                    <p class="artigo-nome">Grelhado</p>
+                    <div class="artigo-espaco"></div>
+                    <p class="artigo-preco"><span style="color: var(--black);">€ 7.30</span> / € 7.85</p>
+                </div>
+                <div class="artigo-nota">A simplicidade H3 e meia rodela de limão.</div>
             </div>
             <div class="artigo-wrapper">
                 <div class="artigo">
-                    <div class="artigo-nome">Limão e flor de sal</div>
+                    <p class="artigo-nome">Com molho</p>
                     <div class="artigo-espaco"></div>
-                    <div class="artigo-preco">6.95</div>
+                    <p class="artigo-preco"><span style="color: var(--black);">€ 7.40</span> / € 7.95</p>
                 </div>
-                <div class="artigo-nota">&nbsp;</div>
+                <div class="artigo-nota">Molho à Café, receita do Chef.</div>
             </div>
-        </div>
-        <div class="ementa-rodape">Os preços apresentados incluem IVA à taxa legal em vigor</div>
+            <div class="artigo-wrapper">
+                <div class="artigo">
+                    <p class="artigo-nome">Super bread</p>
+                    <div class="artigo-espaco"></div>
+                    <p class="artigo-preco"><span style="color: var(--black);">€ 7.80</span> / € 8.35</p>
+                </div>
+                <div class="artigo-nota"><span style="font-weight: 700;">Apenas no pão.</span> Pão focaccia, hambúrguer grelhado, alface, tomate, cebola roxa, molho maionese de mostarda antiga e ketchup.</div>
+            </div>
+            <div class="artigo-wrapper">
+                <div class="artigo">
+                    <p class="artigo-nome">Tuga</p>
+                    <div class="artigo-espaco"></div>
+                    <p class="artigo-preco"><span style="color: var(--black);">€ 8.10</span> / € 8.65</p>
+                </div>
+                <div class="artigo-nota">Molho tuga, ovo estrelado, alho e louro.</div>
+            </div>
+            <div class="artigo-wrapper">
+                <div class="artigo">
+                    <p class="artigo-nome">Champignon</p>
+                    <div class="artigo-espaco"></div>
+                    <p class="artigo-preco"><span style="color: var(--black);">€ 8.30</span> / € 8.85</p>
+                </div>
+                <div class="artigo-nota">Molho de cogumelos frescos.</div>
+            </div>
+            <div class="artigo-wrapper">
+                <div class="artigo">
+                    <p class="artigo-nome">Cheese</p>
+                    <div class="artigo-espaco"></div>
+                    <p class="artigo-preco"><span style="color: var(--black);">€ 8.30</span> / € 8.85</p>
+                </div>
+                <div class="artigo-nota">Molho cheddar, cebola salteada, ketchup e maionese.</div>
+            </div>
+            <div class="artigo-wrapper">
+                <div class="artigo">
+                    <p class="artigo-nome">Med</p>
+                    <div class="artigo-espaco"></div>
+                    <p class="artigo-preco"><span style="color: var(--black);">€ 8.30</span> / € 8.85</p>
+                </div>
+                <div class="artigo-nota">Rúcula, parmesão, tomate seco e molho de azeite e limão.</div>
+            </div>
+            <div class="artigo-wrapper">
+                <div class="artigo">
+                    <p class="artigo-nome">Carbonara</p>
+                    <div class="artigo-espaco"></div>
+                    <p class="artigo-preco"><span style="color: var(--black);">€ 8.30</span> / € 8.85</p>
+                </div>
+                <div class="artigo-nota">Molho carbonara, bacon, parmesão e ovo estrelado.</div>
+            </div>
+            <div class="artigo-wrapper">
+                <div class="artigo">
+                    <p class="artigo-nome">Benedict</p>
+                    <div class="artigo-espaco"></div>
+                    <p class="artigo-preco"><span style="color: var(--black);">€ 8.40</span> / € 8.95</p>
+                </div>
+                <div class="artigo-nota">Espinafres salteados, molho holandês e ovo escalfado.</div>
+            </div>
+            <div class="artigo-wrapper">
+                <div class="artigo">
+                    <p class="artigo-nome">French</p>
+                    <div class="artigo-espaco"></div>
+                    <p class="artigo-preco"><span style="color: var(--black);">€ 10.95</span> / € 11.50</p>
+                </div>
+                <div class="artigo-nota">Escalope de foie gras, cebola confitada e redução de vinho do Porto.</div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><h1>Clássico</h1></legend>
+            <div class="menu-info">
+                <p><span style="font-weight: 700;">Acompanhamentos à escolha: batatas às rodelas ou arroz Thai.</span></p>
+                <p>— os clássicos incluem 1 acompanhamento.</p>
+            </div>
+            <p class="bebida-legenda"><span style="color: var(--black);">sem</span> / com bebida</p>
+            <div class="artigo-wrapper">
+                <div class="artigo">
+                    <p class="artigo-nome">Croquetes</p>
+                    <div class="artigo-espaco"></div>
+                    <p class="artigo-preco"><span style="color: var(--black);">€ 8.10</span> / € 8.65</p>
+                </div>
+                <div class="artigo-nota">3 croquetes com espinafres salteados e ovo estrelado.</div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><h1>Bebidas</h1></legend>
+            <div class="artigo-wrapper">
+                <div class="artigo">
+                    <p class="artigo-nome">Limonadas</p>
+                    <div class="artigo-espaco"></div>
+                    <p class="artigo-preco">€ 1.45</p>
+                </div>
+                <div class="artigo-nota">Limonada simples, de morango ou de maracujá.</div>
+            </div>
+            <div class="artigo-wrapper">
+                <div class="artigo">
+                    <p class="artigo-nome">Chás</p>
+                    <div class="artigo-espaco"></div>
+                    <p class="artigo-preco">€ 1.45</p>
+                </div>
+                <div class="artigo-nota">Chá preto gelado ou de limão</div>
+            </div>
+
+        </fieldset>
+        <div class="ementa-rodape">Preços incluem IVA à taxa legal em vigor.</div>
+        <div class="ementa-rodape">Imagens meramente ilustrativas.</div>
     </div>
 </body>
 

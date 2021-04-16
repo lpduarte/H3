@@ -1,62 +1,163 @@
+:root {
+    --blue: #1A9ED4;
+    --black: #333333;
+}
+
+html,
 body {
+    border: 0;
+    margin: 0;
+    padding: 0;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     background-color: white;
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--black);
+    vertical-align: baseline;
 }
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+    overflow: visible;
+}
+
+/* EMENTA */
+
+h1 {
+    margin: 0 0 50px 0;
+    font-size: 4em;
+    line-height: 1em;
+}
+
+p {
+    margin: 0;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+a,
+a:visited {
+    margin: 0;
+    font-size: 0.98em;
+    line-height: 1em;
+    text-decoration: none;
+    color: var(--blue);
+}
+
+/* EMENTA */
 
 .ementa {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 50px 100px;
-    width: fit-content;
-    color: var(--blue-dark);
+    width: 850px;
     background-color: white;
+    box-shadow: 0 0 30px rgb(0 0 0 / 50%);
 }
 
-.ementa-grupo {
-    margin-bottom: 50px;
-    width: 100%;
-}
-
-.titulo {
-    margin-bottom: 50px;
-    font-size: 6.375em;
-    line-height: 1.2em;
-}
-
-.sub-titulo-wrapper {
-    margin-bottom: 25px;
-}
-
-    .sub-titulo {
-        font-size: 3.98em;
-        color: var(--red);
+    .ementa .ementa-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        width: 100%;
+        padding: 0 0 0 35px;
     }
 
-.menu {
-    padding-left: 25px;
-}
+        .ementa .ementa-header .logo img {
+            width: 100%;
+        }
+
+        .ementa .ementa-header a {
+            border: 2px solid var(--blue);
+            border-radius: 15px;
+            padding: 15px 30px;
+            background-color: white;
+            transition: background-color .2s;
+        }
+
+        .ementa .ementa-header a:hover {
+            border: 2px solid var(--blue);
+            color: white;
+            background-color: var(--blue);
+        }
+
+    .ementa fieldset {
+        margin-bottom: 50px;
+        width: 100%;
+        border: 3px solid var(--blue);
+        border-radius: 15px;
+        padding: 0 15px 15px 15px;
+    }
+
+        .ementa fieldset legend {
+            display: flex;
+            padding: 45px 15px 0 15px;
+            color: var(--blue);
+        }
+
+            .ementa fieldset legend img {
+                height: 65px;
+                margin-right: 15px;
+            }
+
+        .ementa fieldset .menu-info {
+            border-bottom: 4px dotted var(--blue);
+            margin: 0 15px 35px 15px;
+            padding: 0 0 25px 0;
+            color: var(--blue);
+        }
+
+            .ementa fieldset .menu-info p {
+                font-size: .98em;
+                margin-bottom: 5px;
+            }
+
+        .ementa fieldset p.bebida-legenda {
+            padding: 0 15px;
+            font-size: .98em;
+            color: var(--blue);
+            text-align: right;
+        }
+
+
+
+
+
 
 .artigo-wrapper {
     margin-bottom: 15px;
+    padding: 15px;
 }
 
     .artigo {
         display: flex;
+        align-items: baseline;
+        margin-bottom: 10px;
         width: 100%;
-        font-size: 2.49em;
     }
 
         .artigo-nome {
             padding-right: 10px;
-            color: black;
+            font-weight: 700;
         }
 
         .artigo-preco {
             margin-left: 10px;
+            font-size: 1.56em;
+            color: var(--blue);
         }
 
         .artigo-nome,
@@ -66,52 +167,16 @@ body {
 
         .artigo-espaco {
             flex: 1 1 auto;
-            height: 42px;
-            border-bottom: 4px dotted var(--blue-dark);
+            border-bottom: 2px dotted var(--blue);
         }
 
     .artigo-nota {
-        font-size: 1.56em;
+        font-size: .98em;
+        color: var(--blue);
     }
 
 .ementa-rodape {
-    font-size: 1.56em;
-}
-
-@media screen and (max-width:1920px) {
-
-    .artigo-espaco {
-        height: 37px;
-    }
-
-}
-
-@media screen and (max-width:950px) {
-
-    .artigo-espaco {
-        height: 31px;
-    }
-
-}
-
-@media screen and (max-width:830px) {
-
-    .artigo-espaco {
-        height: 26px;
-    }
-
-}
-
-@media screen and (max-width:650px) {
-
-    .ementa {
-        width: 100%;
-        padding: 25px;
-    }
-
-    .artigo-espaco {
-        border-bottom: 2px dotted var(--blue-dark);
-    }
-
-
+    padding: 0 35px;
+    font-size: 0.98em;
+    color: var(--blue);
 }
