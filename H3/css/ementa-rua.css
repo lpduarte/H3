@@ -57,7 +57,13 @@ a:visited {
 
 /* EMENTA */
 
+.screen {
+    position: relative;
+}
+
 .ementa {
+    position: absolute;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -81,15 +87,15 @@ a:visited {
         }
 
         .ementa .ementa-header a {
-            border: 2px solid var(--blue);
+            border: 3px solid var(--blue);
             border-radius: 15px;
             padding: 15px 30px;
             background-color: white;
+            font-weight: 700;
             transition: background-color .2s;
         }
 
         .ementa .ementa-header a:hover {
-            border: 2px solid var(--blue);
             color: white;
             background-color: var(--blue);
         }
@@ -130,6 +136,10 @@ a:visited {
             font-size: .98em;
             color: var(--blue);
             text-align: right;
+        }
+
+        .ementa fieldset.extras p.artigo-nome {
+            font-size: 1.56em;
         }
 
 
@@ -180,3 +190,32 @@ a:visited {
     font-size: 0.98em;
     color: var(--blue);
 }
+
+
+
+
+
+
+.screen .video {
+    position: relative;
+    overflow: hidden;
+}
+
+    .screen .video .video-overlay {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQYV2PklND4//3FDUYGBgYGMAEDKBwAh5UEBJUp5XkAAAAASUVORK5CYII=) repeat;
+    }
+
+    .screen .video video {
+        position: fixed;
+        left: 50%;
+        top: -3px;
+        transform: translate(-50%);
+        min-width: 101%;
+        min-height: 101%;
+        width: auto;
+        height: auto;
+    }
