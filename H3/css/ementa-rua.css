@@ -76,11 +76,12 @@ a:visited {
             padding: 0 0 0 35px;
         }
 
-            .ementa .ementa-header .logo img {
-                width: 100%;
+            .ementa .ementa-header img {
+                max-height: 100px;
+                padding-right: 25px;
             }
 
-            .ementa .ementa-header .logo-square {
+            .ementa .ementa-header img.logo-square {
                 display: none;
             }
 
@@ -103,28 +104,31 @@ a:visited {
             width: 100%;
             border: 3px solid var(--blue);
             border-radius: 15px;
-            padding: 0 15px 15px 15px;
+            padding: 0 35px 15px 35px;
         }
 
             .ementa fieldset legend {
-                display: flex;
-                flex-direction: row;
-                padding: 0 15px;
+                position: relative;
+                padding: 0 15px 0 0;
                 color: var(--blue);
             }
 
                 .ementa fieldset legend img {
+                    position: absolute;
                     height: 65px;
-                    margin-right: 15px;
+                }
+
+                .ementa fieldset legend h1 {
+                    padding-left: 75px;
                 }
             
             .ementa fieldset .fieldset-container {
-                margin-top: 25px;
+                margin-top: 50px;
             }
 
                 .ementa fieldset .menu-info {
                     border-bottom: 4px dotted var(--blue);
-                    margin: 0 15px 35px 15px;
+                    margin: 0 0 35px 0;
                     padding: 0 0 25px 0;
                     color: var(--blue);
                 }
@@ -135,7 +139,6 @@ a:visited {
                     }
 
                 .ementa fieldset p.bebida-legenda {
-                    padding: 0 15px;
                     font-size: .98em;
                     color: var(--blue);
                     text-align: right;
@@ -143,7 +146,7 @@ a:visited {
 
                 .artigo-wrapper {
                     margin-bottom: 15px;
-                    padding: 15px;
+                    padding: 15px 0;
                 }
                 
                     .artigo {
@@ -231,7 +234,7 @@ a:visited {
 
 }
 
-@media screen and (max-width:820px) {
+@media screen and (max-width:849px) {
 
     html,
     body {
@@ -244,7 +247,7 @@ a:visited {
 
 }
 
-@media screen and (max-width:690px) {
+@media screen and (max-width:725px) {
 
     html,
     body {
@@ -257,7 +260,7 @@ a:visited {
 
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:695px) {
 
     html,
     body {
@@ -268,22 +271,39 @@ a:visited {
             padding: 50px 25px;
         }
 
+            .ementa fieldset legend h1 {
+                padding-left: 70px;
+            }
+
+            .ementa fieldset {
+                padding: 0 25px 15px 25px;
+            }
+    
+
 }
 
-@media screen and (max-width:570px) {
+@media screen and (max-width:585px) {
 
     html,
     body {
         font-size: 12px;
     }
 
+        .ementa .ementa-header img {
+            height: 60px;
+        }
+
         .ementa fieldset legend img {
             height: 50px;
         }
 
+        .ementa fieldset legend h1 {
+            padding-left: 65px;
+        }
+
 }
 
-@media screen and (max-width:540px) {
+@media screen and (max-width:550px) {
 
     html,
     body {
@@ -294,26 +314,30 @@ a:visited {
             height: 45px;
         }
 
+        .ementa fieldset legend h1 {
+            padding-left: 60px;
+        }
+
 }
 
-@media screen and (max-width:540px) {
+@media screen and (max-width:535px) {
 
     html,
     body {
         font-size: 11px;
     }
 
-        .ementa fieldset {
-            margin-bottom: 25px;
-        }
-
             .ementa fieldset legend img {
                 height: 45px;
             }
 
+            .ementa fieldset legend h1 {
+                padding-left: 55px;
+            }
+
 }
 
-@media screen and (max-width:505px) {
+@media screen and (max-width:510px) {
 
     html,
     body {
@@ -328,8 +352,8 @@ a:visited {
             height: 40px;
         }
 
-        .artigo-wrapper {
-            padding: 5px 15px;
+        .ementa fieldset legend h1 {
+            padding-left: 50px;
         }
 
 }
@@ -340,10 +364,6 @@ a:visited {
     body {
         font-size: 9px;
     }
-
-        .ementa .ementa-header .logo img {
-            width: 80%;
-        }
 
         .ementa fieldset legend img {
             height: 35px;
@@ -382,6 +402,18 @@ a:visited {
 
 @media screen and (max-width:405px) {
 
+    .ementa .ementa-header img {
+        height: 70px;
+    }
+
+    .ementa .ementa-header img.logo-full {
+        display: none;
+    }
+
+    .ementa .ementa-header img.logo-square {
+        display: initial;
+    }
+
     .ementa .ementa-header a {
         padding: 10px 20px;
     }
@@ -398,18 +430,6 @@ a:visited {
     body {
         font-size: 7px;
     }
-
-        .ementa .ementa-header .logo {
-            display: none;
-        }
-
-        .ementa .ementa-header .logo-square {
-            display: contents;
-        }
-
-            .ementa .ementa-header .logo-square img {
-                height: 70px;
-            }
 
         fieldset.extras .artigo-nome {
             line-height: 1.2em;
