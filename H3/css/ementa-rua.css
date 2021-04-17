@@ -358,7 +358,7 @@ a:visited {
 
 }
 
-@media screen and (max-width:470px) {
+@media screen and (max-width:475px) {
 
     html,
     body {
@@ -367,6 +367,10 @@ a:visited {
 
         .ementa fieldset legend img {
             height: 35px;
+        }
+
+        .ementa fieldset legend h1 {
+            padding-left: 45px;
         }
 
         .artigo-wrapper {
@@ -383,7 +387,7 @@ a:visited {
 
 }
 
-@media screen and (max-width:435px) {
+@media screen and (max-width:440px) {
 
     html,
     body {
@@ -400,7 +404,7 @@ a:visited {
 
 }
 
-@media screen and (max-width:405px) {
+@media screen and (max-width:410px) {
 
     .ementa .ementa-header img {
         height: 70px;
@@ -422,13 +426,33 @@ a:visited {
         display: none;
     }
 
+    .ementa fieldset legend {
+        padding: 0 15px;
+    }
+
+        .ementa fieldset legend h1 {
+            padding-left: 0;
+        }
+    
+    .ementa fieldset .fieldset-container {
+        padding: 0 15px;
+    }
+
+        .artigo-wrapper {
+            padding: 15px 0;
+        }
+
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:380px) {
 
     html,
     body {
         font-size: 7px;
+    }
+
+    .ementa fieldset {
+        padding: 0 15px 15px 15px;
     }
 
         fieldset.extras .artigo-nome {
