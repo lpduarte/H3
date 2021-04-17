@@ -29,7 +29,7 @@ div {
 }
 
 h1 {
-    margin: 0 0 50px 0;
+    margin: 0;
     font-size: 4em;
     line-height: 1em;
 }
@@ -71,7 +71,7 @@ a:visited {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 25px;
+            margin-bottom: 75px;
             width: 100%;
             padding: 0 0 0 35px;
         }
@@ -108,7 +108,8 @@ a:visited {
 
             .ementa fieldset legend {
                 display: flex;
-                padding: 45px 15px 0 15px;
+                flex-direction: row;
+                padding: 0 15px;
                 color: var(--blue);
             }
 
@@ -116,67 +117,71 @@ a:visited {
                     height: 65px;
                     margin-right: 15px;
                 }
-
-            .ementa fieldset .menu-info {
-                border-bottom: 4px dotted var(--blue);
-                margin: 0 15px 35px 15px;
-                padding: 0 0 25px 0;
-                color: var(--blue);
+            
+            .ementa fieldset .fieldset-container {
+                margin-top: 25px;
             }
 
-                .ementa fieldset .menu-info p {
-                    font-size: .98em;
-                    margin-bottom: 5px;
-                }
-
-            .ementa fieldset p.bebida-legenda {
-                padding: 0 15px;
-                font-size: .98em;
-                color: var(--blue);
-                text-align: right;
-            }
-
-            .artigo-wrapper {
-                margin-bottom: 15px;
-                padding: 15px;
-            }
-            
-                .artigo {
-                    display: flex;
-                    align-items: baseline;
-                    margin-bottom: 10px;
-                    width: 100%;
-                }
-            
-                    .artigo-nome {
-                        padding-right: 10px;
-                        font-weight: 700;
-                    }
-
-                    fieldset.extras .artigo-nome {
-                        font-size: 1.56em;
-                    }
-            
-                    .artigo-preco {
-                        margin-left: 10px;
-                        font-size: 1.56em;
-                        color: var(--blue);
-                    }
-            
-                    .artigo-nome,
-                    .artigo-preco {
-                        flex: 0 0 auto;
-                    }
-            
-                    .artigo-espaco {
-                        flex: 1 1 auto;
-                        border-bottom: 2px dotted var(--blue);
-                    }
-            
-                .artigo-nota {
-                    font-size: .98em;
+                .ementa fieldset .menu-info {
+                    border-bottom: 4px dotted var(--blue);
+                    margin: 0 15px 35px 15px;
+                    padding: 0 0 25px 0;
                     color: var(--blue);
                 }
+
+                    .ementa fieldset .menu-info p {
+                        font-size: .98em;
+                        margin-bottom: 5px;
+                    }
+
+                .ementa fieldset p.bebida-legenda {
+                    padding: 0 15px;
+                    font-size: .98em;
+                    color: var(--blue);
+                    text-align: right;
+                }
+
+                .artigo-wrapper {
+                    margin-bottom: 15px;
+                    padding: 15px;
+                }
+                
+                    .artigo {
+                        display: flex;
+                        align-items: baseline;
+                        margin-bottom: 10px;
+                        width: 100%;
+                    }
+                
+                        .artigo-nome {
+                            padding-right: 10px;
+                            font-weight: 700;
+                        }
+
+                        fieldset.extras .artigo-nome {
+                            font-size: 1.56em;
+                        }
+                
+                        .artigo-preco {
+                            margin-left: 10px;
+                            font-size: 1.56em;
+                            color: var(--blue);
+                        }
+                
+                        .artigo-nome,
+                        .artigo-preco {
+                            flex: 0 0 auto;
+                        }
+                
+                        .artigo-espaco {
+                            flex: 1 1 auto;
+                            border-bottom: 2px dotted var(--blue);
+                        }
+                
+                    .artigo-nota {
+                        font-size: .98em;
+                        color: var(--blue);
+                    }
 
         .ementa-rodape {
             padding: 0 35px;
