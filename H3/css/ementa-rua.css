@@ -31,12 +31,27 @@ div {
 h1 {
     margin: 0;
     font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.56em;
+    font-weight: 700;
     line-height: 1em;
 }
 
 p {
-    margin: 0;
-    font-size: 2.5em;
+    margin: 0 0 5px 0;
+    font-size: 0.98em;
     line-height: 1em;
 }
 
@@ -51,190 +66,169 @@ a:visited {
 
 /* EMENTA */
 
-.screen {
-    position: relative;
+.ementa {
+    position: absolute;
+    z-index: 2;
+    padding: 50px 100px;
+    width: 850px;
+    background-color: white;
+    box-shadow: 0 0 30px rgb(0 0 0 / 50%);
 }
 
-    .ementa {
-        position: absolute;
-        z-index: 2;
+    .ementa .ementa-header {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 50px 100px;
-        width: 850px;
-        background-color: white;
-        box-shadow: 0 0 30px rgb(0 0 0 / 50%);
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 75px;
+        width: 100%;
+        padding: 0 0 0 53px;
     }
 
-        .ementa .ementa-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 75px;
-            width: 100%;
-            padding: 0 0 0 35px;
+        .ementa .ementa-header img {
+            max-height: 100px;
+            padding-right: 25px;
         }
 
-            .ementa .ementa-header img {
-                max-height: 100px;
-                padding-right: 25px;
-            }
+        .ementa .ementa-header img.logo-square {
+            display: none;
+        }
 
-            .ementa .ementa-header img.logo-square {
-                display: none;
-            }
-
-            .ementa .ementa-header a {
-                border: 3px solid var(--blue);
-                border-radius: 15px;
-                padding: 15px 30px;
-                background-color: white;
-                font-weight: 700;
-                transition: background-color .2s;
-            }
-
-            .ementa .ementa-header a:hover {
-                color: white;
-                background-color: var(--blue);
-            }
-
-        .ementa fieldset {
-            margin-bottom: 50px;
-            width: 100%;
+        .ementa .ementa-header a {
             border: 3px solid var(--blue);
             border-radius: 15px;
-            padding: 0 35px 15px 35px;
+            padding: 15px 30px;
+            background-color: white;
+            font-weight: 700;
+            transition: background-color .2s;
         }
 
-            .ementa fieldset legend {
-                position: relative;
-                padding: 0 15px 0 0;
-                color: var(--blue);
-            }
+        .ementa .ementa-header a:hover {
+            color: white;
+            background-color: var(--blue);
+        }
 
-                .ementa fieldset legend img {
-                    position: absolute;
-                    height: 65px;
-                }
+    .ementa fieldset {
+        margin: 0 0 50px 0;
+        width: 100%;
+        border: 3px solid var(--blue);
+        border-radius: 15px;
+        padding: 0 35px;
+    }
 
-                .ementa fieldset legend h1 {
-                    padding-left: 75px;
-                }
-            
-            .ementa fieldset .fieldset-container {
-                margin-top: 50px;
-            }
-
-                .ementa fieldset .menu-info {
-                    border-bottom: 4px dotted var(--blue);
-                    margin: 0 0 35px 0;
-                    padding: 0 0 25px 0;
-                    color: var(--blue);
-                }
-
-                    .ementa fieldset .menu-info p {
-                        font-size: .98em;
-                        margin-bottom: 5px;
-                    }
-
-                .ementa fieldset p.bebida-legenda {
-                    font-size: .98em;
-                    color: var(--blue);
-                    text-align: right;
-                }
-
-                .artigo-wrapper {
-                    margin-bottom: 15px;
-                    padding: 15px 0;
-                }
-                
-                    .artigo {
-                        display: flex;
-                        align-items: baseline;
-                        margin-bottom: 10px;
-                        width: 100%;
-                    }
-                
-                        .artigo-nome {
-                            padding-right: 10px;
-                            font-weight: 700;
-                        }
-
-                        fieldset.extras .artigo-nome {
-                            font-size: 1.56em;
-                        }
-                
-                        .artigo-preco {
-                            margin-left: 10px;
-                            font-size: 1.56em;
-                            color: var(--blue);
-                        }
-                
-                        .artigo-nome,
-                        .artigo-preco {
-                            flex: 0 0 auto;
-                        }
-                
-                        .artigo-espaco {
-                            flex: 1 1 auto;
-                            border-bottom: 2px dotted var(--blue);
-                        }
-                
-                    .artigo-nota {
-                        font-size: .98em;
-                        color: var(--blue);
-                    }
-
-        .ementa-rodape {
-            padding: 0 35px;
-            font-size: 0.98em;
+        .ementa fieldset legend {
+            padding: 0 15px;
             color: var(--blue);
         }
 
-    .video {
-        position: relative;
-        overflow: hidden;
+        .ementa fieldset .fieldset-container {
+            margin-top: 50px;
+            padding: 0 15px;
+        }
+
+            .ementa fieldset .menu-info {
+                border-bottom: 4px dotted var(--blue);
+                margin: 0 0 50px 0;
+                padding: 0 0 40px 0;
+                color: var(--blue);
+            }
+
+            .ementa fieldset .bebida-legenda {
+                margin-bottom: 0;
+                color: var(--blue);
+                text-align: right;
+            }
+
+            .artigo-wrapper {
+                padding: 0 0 50px 0;
+            }
+
+                .artigo {
+                    display: flex;
+                    align-items: baseline;
+                    margin-bottom: 15px;
+                    width: 100%;
+                }
+
+                    .artigo-nome {
+                        padding-right: 10px;
+                    }
+
+                    .artigo-preco {
+                        margin-left: 10px;
+                        color: var(--blue);
+                    }
+
+                    .artigo-nome,
+                    .artigo-preco {
+                        flex: 0 0 auto;
+                    }
+
+                    .artigo-espaco {
+                        flex: 1 1 auto;
+                        border-bottom: 2px dotted var(--blue);
+                    }
+
+                .artigo-nota {
+                    color: var(--blue);
+                }
+
+    .ementa-rodape {
+        padding: 0 53px;
+        color: var(--blue);
     }
-    
-        .video .video-overlay {
-            position: fixed;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQYV2PklND4//3FDUYGBgYGMAEDKBwAh5UEBJUp5XkAAAAASUVORK5CYII=) repeat;
-        }
-    
-        .video video {
-            position: fixed;
-            left: 50%;
-            top: -3px;
-            transform: translate(-50%);
-            min-width: 101%;
-            min-height: 101%;
-            width: auto;
-            height: auto;
-        }
+
+.video-background {
+    position: relative;
+    overflow: hidden;
+}
+
+    .video-background video {
+        position: fixed;
+        left: 50%;
+        top: -3px;
+        transform: translate(-50%);
+        min-width: 101%;
+        min-height: 101%;
+        width: auto;
+        height: auto;
+    }
+
+    .video-overlay {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGklEQVQYV2PklND4//3FDUYGBgYGMAEDKBwAh5UEBJUp5XkAAAAASUVORK5CYII=) repeat;
+    }
+
+.video-foreground {
+    display: none;
+    overflow: hidden;
+}
+
+    .video-foreground video {
+        width: 100%;
+    }
 
 @media screen and (max-width:850px) {
 
     .ementa {
-        padding: 50px 100px;
         width: 100%;
         box-shadow: none;
     }
 
-    .rodape-imagens {
-        display: none;
+    .video-foreground {
+        display: initial;
     }
 
-    .video {
+    .video-background {
         display: none;
     }
 
 }
 
-@media screen and (max-width:849px) {
+
+@media screen and (max-width:785px) {
 
     html,
     body {
@@ -242,122 +236,139 @@ a:visited {
     }
 
         .ementa {
-            padding: 50px 50px;
+            padding: 50px;
         }
 
 }
 
-@media screen and (max-width:725px) {
+@media screen and (max-width:655px) {
 
     html,
     body {
         font-size: 14px;
     }
 
-        .ementa fieldset legend img {
-            height: 55px;
+        .ementa {
+            padding: 50px 25px;
         }
+
+            .ementa .ementa-header {
+                padding: 0 0 0 38px;
+            }
+
+            .ementa fieldset {
+                padding: 0 20px;
+            }
+
+            .ementa-rodape {
+                padding: 0 38px;
+            }
 
 }
 
-@media screen and (max-width:695px) {
+@media screen and (max-width:580px) {
+
+    .ementa .ementa-header img {
+        height: 70px;
+    }
+
+    .artigo-wrapper {
+        padding: 0 0 25px 0;
+    }
+
+}
+
+@media screen and (max-width:545px) {
 
     html,
     body {
         font-size: 13px;
     }
 
-        .ementa {
-            padding: 50px 25px;
-        }
-
-            .ementa fieldset legend h1 {
-                padding-left: 70px;
-            }
-
-            .ementa fieldset {
-                padding: 0 25px 15px 25px;
-            }
-    
-
 }
 
-@media screen and (max-width:585px) {
+@media screen and (max-width:520px) {
 
     html,
     body {
         font-size: 12px;
     }
 
+        .ementa {
+            padding: 50px 0;
+        }
+
+            .ementa .ementa-header {
+                padding: 0 25px;
+            }
+
+            .ementa fieldset {
+                border: 0;
+                padding: 25px;
+            }
+
+                .ementa fieldset legend {
+                    padding: 0;
+                }
+
+                .ementa fieldset .fieldset-container {
+                    margin-top: 25px;
+                    padding: 0;
+                }
+            
+            .ementa-rodape {
+                padding: 0 25px;
+            }
+
+}
+
+@media screen and (max-width:415px) {
+
+    html,
+    body {
+        font-size: 11px;
+    }
+
         .ementa .ementa-header img {
             height: 60px;
         }
 
-        .ementa fieldset legend img {
-            height: 50px;
-        }
-
-        .ementa fieldset legend h1 {
-            padding-left: 65px;
-        }
-
 }
 
-@media screen and (max-width:550px) {
-
-    html,
-    body {
-        font-size: 11px;
-    }
-
-        .ementa fieldset legend img {
-            height: 45px;
-        }
-
-        .ementa fieldset legend h1 {
-            padding-left: 60px;
-        }
-
-}
-
-@media screen and (max-width:535px) {
-
-    html,
-    body {
-        font-size: 11px;
-    }
-
-            .ementa fieldset legend img {
-                height: 45px;
-            }
-
-            .ementa fieldset legend h1 {
-                padding-left: 55px;
-            }
-
-}
-
-@media screen and (max-width:510px) {
+@media screen and (max-width:385px) {
 
     html,
     body {
         font-size: 10px;
     }
 
+        .ementa .ementa-header img {
+            height: 70px;
+        }
+
+        .ementa .ementa-header img.logo-full {
+            display: none;
+        }
+
+        .ementa .ementa-header img.logo-square {
+            display: initial;
+        }
+
         .ementa .ementa-header a {
             padding: 15px 20px;
         }
 
-        .ementa fieldset legend img {
-            height: 40px;
-        }
-
-        .ementa fieldset legend h1 {
-            padding-left: 50px;
-        }
-
 }
 
+@media screen and (max-width:355px) {
+
+    html,
+    body {
+        font-size: 9px;
+    }
+
+}
+/*
 @media screen and (max-width:475px) {
 
     html,
@@ -382,7 +393,7 @@ a:visited {
         .ementa fieldset p.bebida-legenda,
         .artigo-nota,
         .ementa-rodape {
-            font-size: 1.3em;
+            font-size: 1.5em;
         }
 
 }
@@ -399,7 +410,7 @@ a:visited {
         .ementa fieldset p.bebida-legenda,
         .artigo-nota,
         .ementa-rodape {
-            font-size: 1.4em;
+            font-size: 1.5em;
         }
 
 }
@@ -487,3 +498,4 @@ a:visited {
         }
 
 }
+*/
