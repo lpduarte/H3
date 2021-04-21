@@ -140,6 +140,10 @@ a:visited {
             background-color: white;
         }
 
+        .ementa fieldset.en .gramas {
+            top: -80px;
+        }
+
         .ementa fieldset .fieldset-container {
             margin-top: 50px;
             padding: 0 15px;
@@ -246,66 +250,36 @@ a:visited {
 }
 
 
-@media screen and (max-width:785px) {
+@media screen and (max-width:735px) {
 
-    html,
-    body {
-        font-size: 15px;
+    .ementa {
+        padding: 50px;
     }
 
-        .ementa {
-            padding: 50px;
+}
+
+@media screen and (max-width:635px) {
+
+    .ementa {
+        padding: 50px 25px;
+    }
+
+        .ementa .ementa-header {
+            padding: 0 0 0 38px;
+        }
+
+        .ementa fieldset {
+            padding: 0 20px;
+        }
+
+        .ementa-rodape {
+            padding: 0 38px;
         }
 
 }
 
-@media screen and (max-width:655px) {
+@media screen and (max-width:555px) {
 
-    html,
-    body {
-        font-size: 14px;
-    }
-
-        .ementa {
-            padding: 50px 25px;
-        }
-
-            .ementa .ementa-header {
-                padding: 0 0 0 38px;
-            }
-
-            .ementa fieldset {
-                padding: 0 20px;
-            }
-
-            .ementa-rodape {
-                padding: 0 38px;
-            }
-
-}
-
-@media screen and (max-width:580px) {
-
-    .ementa .ementa-header img {
-        height: 70px;
-    }
-
-    .artigo-wrapper {
-        padding: 0 0 25px 0;
-    }
-
-}
-
-@media screen and (max-width:545px) {
-
-    html,
-    body {
-        font-size: 13px;
-    }
-
-}
-
-@media screen and (max-width:520px) {
 
     .ementa {
         padding: 50px 0;
@@ -315,6 +289,10 @@ a:visited {
             padding: 0 25px;
         }
 
+            .ementa .ementa-header img {
+                height: 70px;
+            }
+
         .ementa fieldset {
             border: 0;
             padding: 25px;
@@ -322,6 +300,7 @@ a:visited {
 
             .ementa fieldset .gramas {
                 top: -105px;
+                right: 25px;
             }
 
             .ementa fieldset legend {
@@ -332,32 +311,81 @@ a:visited {
                 margin-top: 25px;
                 padding: 0;
             }
-        
+
+            .artigo-wrapper {
+                padding: 0 0 25px 0;
+            }   
+
         .ementa-rodape {
             padding: 0 25px;
         }
 
 }
 
-@media screen and (max-width:415px) {
+@media screen and (max-width:490px) {
 
     html,
     body {
-        font-size: 11px;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:470px) {
+
+    html,
+    body {
+        font-size: 14px;
     }
 
         .ementa .ementa-header img {
             height: 60px;
         }
 
+        .ementa fieldset .gramas {
+            top: -80px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .ementa fieldset.en .gramas {
+            top: -65px;
+        }
+
 }
 
-@media screen and (max-width:385px) {
+@media screen and (max-width:440px) {
+
+    .ementa fieldset .gramas {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:430px) {
 
     html,
     body {
-        font-size: 10px;
+        font-size: 13px;
     }
+
+        .ementa .ementa-header {
+            margin-bottom: 50px;
+        }
+
+}
+
+@media screen and (max-width:405px) {
+
+    html,
+    body {
+        font-size: 12px;
+    }
+
+        p {
+            font-size: 1.3em;
+            line-height: 1.3em;
+        }
 
         .ementa .ementa-header img {
             height: 70px;
@@ -375,13 +403,26 @@ a:visited {
             padding: 15px 20px;
         }
 
+        .artigo {
+            margin-bottom: 10px;
+        }
+
+}
+
+@media screen and (max-width:380px) {
+
+    html,
+    body {
+        font-size: 11px;
+    }
+
 }
 
 @media screen and (max-width:355px) {
 
     html,
     body {
-        font-size: 9px;
+        font-size: 10px;
     }
 
 }
