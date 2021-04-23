@@ -11,13 +11,31 @@
     <link rel="stylesheet" href="https://use.typekit.net/qsq2pat.css">
     <!-- Styles -->
     <link href="css/ementa-rua.css" rel="stylesheet" type="text/css" charset="utf-8">
+    <!-- Slides script -->
+    <script>
+        var current = 0,
+            slides = document.getElementsByClassName("slides");
+
+        setInterval(function () {
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = 0;
+            }
+            current = (current != slides.length - 1) ? current + 1 : 0;
+            slides[current].style.opacity = 1;
+        }, 3000);
+    </script>
 </head>
 
 <body>
-    <div class="video-foreground">
-        <video preload="metadata" playsinline="" muted="muted" onplaying="this.controls=false" autoplay="autoplay" loop="loop">
-            <source src="media/background.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
-        </video>
+    <div class="slideshow">
+        <div class="overlay"></div>
+        <img class="slides" src="img/slides/tuga.jpg">
+        <img class="slides" src="img/slides/molho.jpg">
+        <img class="slides" src="img/slides/med.jpg">
+        <img class="slides" src="img/slides/french.jpg">
+        <img class="slides" src="img/slides/champignon.jpg">
+        <img class="slides" src="img/slides/benedict.jpg">
+        <img class="slides" src="img/slides/bebidas.jpg">
     </div>
     <div class="ementa">
         <div class="ementa-header">
@@ -300,12 +318,6 @@
         </fieldset>
         <p class="ementa-rodape">VAT tax included.</p>
         <p class="ementa-rodape">All the images are merely illustrative.</p>
-    </div>
-    <div class="video-background">
-        <div class="video-overlay"></div>
-        <video preload="metadata" playsinline="" muted="muted" onplaying="this.controls=false" autoplay="autoplay" loop="loop">
-            <source src="media/background.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
-        </video>
     </div>
 </body>
 
