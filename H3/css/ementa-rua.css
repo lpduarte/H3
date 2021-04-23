@@ -232,6 +232,19 @@ a:visited {
         width: 100%;
     }
 
+.images-foreground {
+    display: none;
+}
+
+    .images-foreground img {
+        width: 100%;
+        transition: opacity .5s ease-in-out;
+    }
+
+    .images-foreground img + img {
+        opacity: 0;
+    }
+
 @media screen and (max-width:850px) {
 
     .ementa {
@@ -239,8 +252,8 @@ a:visited {
         box-shadow: none;
     }
 
-    .video-foreground {
-        display: initial;
+    .images-foreground {
+        display: flex;
     }
 
     .video-background {
