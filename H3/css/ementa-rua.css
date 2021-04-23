@@ -237,12 +237,12 @@ a:visited {
 }
 
     .images-foreground img {
-        position: absolute;
         width: 100%;
         transition: opacity .5s ease-in-out;
     }
 
     .images-foreground img + img {
+        position: absolute;
         opacity: 0;
     }
 
@@ -255,7 +255,6 @@ a:visited {
 
     .images-foreground {
         display: flex;
-        height: 200px;
     }
 
     .video-background {
